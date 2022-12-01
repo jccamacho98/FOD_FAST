@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AppComidas</string>
+    <string name="botonPideEnLinea">Pide en Linea</string>
+    <string name="botonRegistrarse">Registrarse</string>
+    <string name="botonIniciaSesion">Inicia Sesion</string>
+    <string name="textview">TextView</string>
+    <string name="name">Name</string>
+    <string name="btnContinuarFacebook">Continuar con Facebook</string>
+    <string name="CampoCorreoElectronico">Correo Electronico</string>
+    <string name="textOlvidoContrasena">¿Olvido su Contraseña?</string>
+    <string name="Contrasena">Ingrese Contraseña</string>
+</resources>
