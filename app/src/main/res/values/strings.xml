@@ -9,4 +9,14 @@
     <string name="CampoCorreoElectronico">Correo Electronico</string>
     <string name="textOlvidoContrasena">¿Olvido su Contraseña?</string>
     <string name="Contrasena">Ingrese Contraseña</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="campoSeleccionDocumento">Seleccione el tipo de documento</string>
+    <string name="campoNumDocumento">Numero de documento</string>
+    <string name="campoNumCelular">Numero Celular</string>
+    <string name="CampoFechaNacimiento">Fecha de Nacimiento</string>
+    <string name="campoSexo">sexo</string>
+    <string name="campoNombresApellidos">Nombres y Apellidos</string>
+    <string name="TerminosYcondiciones">Acepta los terminos y condiciones y la politica de privacidad</string>
+    <string name="CampoIngreseBusqueda">Escriba aqui para buscar</string>
 </resources>

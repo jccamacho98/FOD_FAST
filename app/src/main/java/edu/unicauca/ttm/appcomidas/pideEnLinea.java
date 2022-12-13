@@ -22,4 +22,6 @@ public class pideEnLinea extends AppCompatActivity {
         startActivity(miIntent);
     }
 
+
+
 }
