@@ -11,56 +11,13 @@
         android:id="@+id/tituloCategorias"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="@string/textview"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintBottom_toTopOf="@+id/guideline12"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.793" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/name"
-        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton5"
-        app:layout_constraintHorizontal_bias="0.608"
-        app:layout_constraintStart_toEndOf="@+id/imageButton4"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints" />
-
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="9dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.067"
-        app:srcCompat="@android:drawable/ic_menu_search" />
-
-    <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="18dp"
-        android:layout_marginEnd="28dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.07"
-        app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -76,17 +33,36 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="0dp" />
 
+    <FrameLayout
+        android:id="@+id/ContenedorBus"
+        android:layout_width="375dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloCategorias"
+        app:layout_constraintVertical_bias="0.0"></FrameLayout>
+
     <Button
         android:id="@+id/btnAtras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="48dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/party_confetti"
         android:onClick="onClick"
         android:text="inicio"
+        android:textColor="#F4F1F1"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline14" />
 
     <TableLayout
         android:id="@+id/tableLayout"
@@ -102,17 +78,20 @@
             android:layout_height="match_parent">
 
             <ImageButton
-                android:id="@+id/imageButton17"
+                android:id="@+id/imgbtnComidasRapidas"
                 android:layout_width="166dp"
                 android:layout_height="217dp"
+                android:onClick="onClick"
                 android:scaleType="centerCrop"
+                android:backgroundTint="@color/black"
                 app:srcCompat="@drawable/categoria_comidas_rapidas" />
 
             <ImageButton
-                android:id="@+id/imageButton16"
+                android:id="@+id/imgbtnAsados"
                 android:layout_width="172dp"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
+                android:backgroundTint="@color/black"
                 app:srcCompat="@drawable/categoria_asados" />
         </TableRow>
 
@@ -121,17 +100,19 @@
             android:layout_height="match_parent">
 
             <ImageButton
-                android:id="@+id/imageButton19"
+                android:id="@+id/imgbtnBebidas"
                 android:layout_width="159dp"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
+                android:backgroundTint="@color/black"
                 app:srcCompat="@drawable/categoria_bebidas" />
 
             <ImageButton
-                android:id="@+id/imageButton18"
+                android:id="@+id/imgbtnFritos"
                 android:layout_width="170dp"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
+                android:backgroundTint="@color/black"
                 app:srcCompat="@drawable/categoria_fritos" />
         </TableRow>
 
@@ -143,5 +124,26 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </TableLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="46dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="145dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="748dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

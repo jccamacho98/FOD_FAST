@@ -21,12 +21,13 @@ public class MainActivity extends AppCompatActivity {
 
         switch (view.getId()){
             case R.id.btnIniciaSesion:
-
+                miIntent=new Intent(MainActivity.this,IniciarSesion.class);
                 break;
             case R.id.btnPedirLinea:
                 miIntent=new Intent(MainActivity.this,pideEnLinea.class);
                 break;
-            case R.id.btnRegistrarse:
+            case R.id.btnmenos:
+                miIntent=new Intent(MainActivity.this,IniciarSesion.class);
                 break;
 
         }

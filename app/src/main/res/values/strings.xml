@@ -19,4 +19,7 @@
     <string name="campoNombresApellidos">Nombres y Apellidos</string>
     <string name="TerminosYcondiciones">Acepta los terminos y condiciones y la politica de privacidad</string>
     <string name="CampoIngreseBusqueda">Escriba aqui para buscar</string>
+    <string name="TituloComidasRapidas">Comidas Rapidas</string>
+    <string name="tituloAgregarCarrito">Agregar al carrito</string>
+    <string name="tituloTotal">Total:$</string>
 </resources>

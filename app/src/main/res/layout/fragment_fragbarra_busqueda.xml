@@ -9,7 +9,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:foregroundTint="#0B0B0B">
 
         <ImageButton
             android:id="@+id/imageButton2"
@@ -17,6 +18,7 @@
             android:layout_height="58dp"
             android:scaleType="centerInside"
             android:src="@drawable/icono_busqueda"
+            android:backgroundTint="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.044"
@@ -25,13 +27,16 @@
             app:layout_constraintVertical_bias="0.37" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/CampoBusqueda"
             android:layout_width="227dp"
             android:layout_height="55dp"
             android:ems="10"
+            android:fontFamily="@font/berdiolla"
+            android:hint="@string/CampoIngreseBusqueda"
             android:inputType="textPersonName"
-            android:text="@string/CampoIngreseBusqueda"
             android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.502"
@@ -43,10 +48,11 @@
             android:id="@+id/imageButton3"
             android:layout_width="65dp"
             android:layout_height="55dp"
-            android:layout_marginEnd="24dp"
+            android:layout_marginEnd="16dp"
             android:scaleType="centerInside"
             android:src="@drawable/icono_filtro"
+            android:backgroundTint="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
-            tools:layout_editor_absoluteY="159dp" />
+            tools:layout_editor_absoluteY="308dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
