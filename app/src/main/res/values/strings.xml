@@ -22,4 +22,5 @@
     <string name="TituloComidasRapidas">Comidas Rapidas</string>
     <string name="tituloAgregarCarrito">Agregar al carrito</string>
     <string name="tituloTotal">Total:$</string>
+
 </resources>

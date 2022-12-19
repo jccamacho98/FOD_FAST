@@ -55,13 +55,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/textTipoDocumento"
-                    android:layout_width="wrap_content"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/campoSeleccionDocumento"
-                    android:textColor="#FBF8F8"
-                    android:textColorHint="#FFFBFB" />
+                    android:layout_margin="16dp"
+                    android:hint="Seleccione el tipo de Documento"
+                    android:textColorHint="#F3F0F0">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/auto_complete_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
             </TableRow>
 
             <TableRow
@@ -95,17 +102,32 @@
             </TableRow>
 
             <TableRow
-                android:layout_width="match_parent"
+                android:layout_width="280dp"
                 android:layout_height="match_parent">
 
-                <EditText
-                    android:id="@+id/editTextDate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="date"
-                    android:text="@string/CampoFechaNacimiento"
-                    android:textColor="#FDFCFC" />
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/FechaNacimientoRegistro"
+                        android:layout_width="350dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/CampoFechaNacimiento"
+                        android:textColor="#FDFCFC" />
+
+                    <ImageButton
+                        android:id="@+id/btn_date"
+                        android:layout_width="31dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:onClick="onClick"
+                        android:src="@android:drawable/btn_dropdown"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </LinearLayout>
+
             </TableRow>
 
             <TableRow
@@ -151,6 +173,7 @@
         </TableLayout>
 
         <Button
+            android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#040404"
@@ -162,5 +185,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tablaLayout"
             app:layout_constraintVertical_bias="0.259" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

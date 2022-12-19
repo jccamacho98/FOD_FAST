@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1089217941422",
+    "project_id": "appcomidas-e6ddd",
+    "storage_bucket": "appcomidas-e6ddd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089217941422:android:97a7b9e75ce28592c1c23f",
+        "android_client_info": {
+          "package_name": "edu.unicauca.ttm.appcomidas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1089217941422-7hrestovjq83qrvaenhdmhagmqfn1351.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZhIAUWgJJQPRxlhWzLnYrThuqIPyKE1Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1089217941422-7hrestovjq83qrvaenhdmhagmqfn1351.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
