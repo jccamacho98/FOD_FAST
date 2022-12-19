@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/black">
 
     <EditText
         android:id="@+id/etPhone"
@@ -15,8 +16,10 @@
         android:text="phone"
         android:textColor="#FFFEFE"
         android:textColorHint="#FFFBFB"
-        tools:layout_editor_absoluteX="-10dp"
-        tools:layout_editor_absoluteY="274dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.408"
+        tools:layout_editor_absoluteX="11dp" />
 
     <EditText
         android:id="@+id/etPassword"
@@ -28,8 +31,10 @@
         android:text="password"
         android:textColor="#FFFEFE"
         android:textColorHint="#FFFBFB"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="192dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.288"
+        tools:layout_editor_absoluteX="3dp" />
 
     <EditText
         android:id="@+id/etEmail"
@@ -41,39 +46,58 @@
         android:text="email"
         android:textColor="#FFFEFE"
         android:textColorHint="#FFFBFB"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="123dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164" />
 
     <EditText
         android:id="@+id/etName"
         android:layout_width="409dp"
         android:layout_height="47dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="@string/Contrasena"
         android:inputType="textPassword"
         android:text="name"
         android:textColor="#FFFEFE"
         android:textColorHint="#FFFBFB"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="51dp" />
+        app:layout_constraintBottom_toTopOf="@+id/etEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btnCreate"
         android:layout_width="398dp"
         android:layout_height="39dp"
+        android:layout_marginEnd="13dp"
         android:contentDescription=" btnCreate"
         android:onClick="onClick"
         android:text="CREATE"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="348dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.528" />
 
     <Button
         android:id="@+id/btnFetch"
         android:layout_width="211dp"
         android:layout_height="33dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="198dp"
         android:contentDescription="btnFetch"
         android:onClick="onClick"
         android:text="FETCH USER"
-        tools:layout_editor_absoluteX="11dp"
-        tools:layout_editor_absoluteY="450dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.676" />
 </androidx.constraintlayout.widget.ConstraintLayout>
