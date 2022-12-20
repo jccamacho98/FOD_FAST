@@ -28,7 +28,7 @@ public class mysql extends AppCompatActivity implements View.OnClickListener{
 
     RequestQueue requestQueue;
 
-    private static final String URL1 = "http://192.168.101.73/FOD_FAST/save.php";
+    private static final String URL1 = "http://192.168.0.187/FOD_FAST/save.php";
 
     @Override
     protected void onCreate(Bundle savedInstancesState){
@@ -61,18 +61,18 @@ public class mysql extends AppCompatActivity implements View.OnClickListener{
         int id = v.getId();
 
         if (id == R.id.btnCreate){
-            String nombre = etName.getText().toString().trim();
+            String name = etName.getText().toString().trim();
             String email = etEmail.getText().toString().trim();
             String password = etPassword.getText().toString().trim();
             String phone = etPhone.getText().toString().trim();
 
-            createUser(nombre, email, password, phone);
+            createUser(name, email, password, phone);
 
         }else if (id == R.id.btnFetch){
 
         }
     }
-    private void createUser(final String nombre, final String email, final String password, final String phone){
+    private void createUser(final String name, final String email, final String password, final String phone){
 
         StringRequest stringRequest = new StringRequest(
                 Request.Method.POST,
@@ -91,11 +91,10 @@ public class mysql extends AppCompatActivity implements View.OnClickListener{
                 }
 
         ){
-            @Nullable
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> params = new HashMap<>();
-                params.put("name", nombre);
+                params.put("name", name);
                 params.put("email", email);
                 params.put("password", password);
                 params.put("phone", phone);
