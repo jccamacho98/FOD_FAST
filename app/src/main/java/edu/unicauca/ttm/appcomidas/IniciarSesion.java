@@ -31,7 +31,9 @@ public class IniciarSesion extends AppCompatActivity {
                 transaction=getSupportFragmentManager().beginTransaction().replace(R.id.ContenedorFrag,fragmentIniciaSesion);
                 break;
             case R.id.btnResgistrarseArriba:
-                transaction=getSupportFragmentManager().beginTransaction().replace(R.id.ContenedorFrag,fragmentRegistrarse);
+               //transaction=getSupportFragmentManager().beginTransaction().replace(R.id.ContenedorFrag,fragmentRegistrarse);
+                miIntent=new Intent(IniciarSesion.this,Registro.class);
+                startActivity(miIntent);
                 break;
             case R.id.btn_atrasInicioSesion:
                 miIntent=new Intent(IniciarSesion.this,MainActivity.class);

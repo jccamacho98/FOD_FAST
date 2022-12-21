@@ -22,5 +22,10 @@
     <string name="TituloComidasRapidas">Comidas Rapidas</string>
     <string name="tituloAgregarCarrito">Agregar al carrito</string>
     <string name="tituloTotal">Total:$</string>
-
+    <string name="select">Select Item</string>
+    <string-array name="Lista">
+        <item>Cedula</item>
+        <item>NIT</item>
+        <item>Cedula estrajeria</item>
+    </string-array>
 </resources>
