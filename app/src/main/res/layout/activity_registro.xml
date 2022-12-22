@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="@drawable/fondo_pantalla2"
     tools:context=".Registro">
 
     <TableLayout
@@ -101,14 +101,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#040404"
+        android:fontFamily="@font/party_confetti"
         android:text="@string/botonRegistrarse"
         android:textColor="#FDFBFB"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.259"
-        app:layout_constraintTop_toBottomOf="@+id/tablaLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/tablaLayout"
+        app:layout_constraintVertical_bias="0.259" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/party_confetti"
+        android:text="Registro"
+        android:textColor="#FDFCFC"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/tablaLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

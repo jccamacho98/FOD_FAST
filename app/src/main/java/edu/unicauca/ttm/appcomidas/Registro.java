@@ -8,17 +8,36 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+
 import edu.unicauca.ttm.appcomidas.db.DbContactos;
 
 public class Registro extends AppCompatActivity {
     EditText txtNombre, txtTelefono, txtCorreoElectronico,txtCedula,txtContrasena;
     Button btnGuarda;
+     //FirebaseApp.initializeApp(this);
+    //FirebaseFirestore db = FirebaseFirestore.getInstance();
+   ///////////firebase//////////////
 
+   public void iniciarFirebase(){
+       FirebaseApp.initializeApp(this);
+       FirebaseFirestore db = FirebaseFirestore.getInstance();
+       //Toast.makeText(this,"Base de datos Iniciada",Toast.LENGTH_SHORT).show();
+       //CollectionReference userCol =db.collection("users");
+       //Map<String>, Object> user=new HashMap<>();
+   }
+   ////////////////////////////////
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
+        //iniciarFirebase();
 
         txtNombre = findViewById(R.id.editNombre);
         txtTelefono = findViewById(R.id.editCeluar);
@@ -45,6 +64,11 @@ public class Registro extends AppCompatActivity {
                 } else {
                     Toast.makeText(Registro.this, "DEBE LLENAR LOS CAMPOS OBLIGATORIOS", Toast.LENGTH_LONG).show();
                 }
+
+                /////////////firebase//////////////////
+                //db.collection("users").document().set("");
+                //hashMapof("provaider" to provider,  )
+                ///////////////////////////////////////
             }
         });
     }
@@ -55,4 +79,5 @@ public class Registro extends AppCompatActivity {
         txtContrasena.setText(R.string.Contrasena);
         txtCedula.setText(R.string.campoNumDocumento);
     }
+
 }
